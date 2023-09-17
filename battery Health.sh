@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #  Author: Jared Nay
-#  Purpose: Generic macOS Battery Health script for portables
+#  Purpose: Generic macOS Battery Health and capacity percentage script for portables
 #  Version: 20230917
 
 #Check Health and Percentage from System Profiler
