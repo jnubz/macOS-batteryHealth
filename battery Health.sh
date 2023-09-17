@@ -1,5 +1,9 @@
 #!/bin/sh
 
+#  Author: Jared Nay
+#  Purpose: Generic macOS Battery Health script for portables
+#  Version: 20230917
+
 #Check Health and Percentage from System Profiler
 health=$(system_profiler SPPowerDataType | grep "Condition" | awk '{print $2" "$3}')
 max_capacity=$(system_profiler SPPowerDataType | grep "Maximum Capacity" | awk '{print $NF}' | tr -d '%')
