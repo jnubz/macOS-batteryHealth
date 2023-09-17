@@ -5,7 +5,7 @@
 #+ This was designed for use with Datto RMM.
 #  Version: 20230917
 
-#Check Battery Health from System Profiler (I commented out capacity because it works in CLI, but Datto retrieves no value.)
+#Check Battery Health from System Profiler (Max Capacity commented out because it works in CLI, but Datto RMM fails to pull the value.)
 health=$(system_profiler SPPowerDataType | grep "Condition" | awk '{print $2" "$3}')
 #max_capacity=$(system_profiler SPPowerDataType | grep "Maximum Capacity" | awk '{print $NF}' | tr -d '%')
 
